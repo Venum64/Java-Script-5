@@ -1,26 +1,25 @@
 // users start
 let users = 10;
-
 let usersamount = {};
 
 for (let i = 1; i <= users; i++) {
     let username = prompt(`Введите имя пользователя ${i}:`);
     let age = +prompt(`Введите возраст пользователя ${i}:`);
     usersamount[i] = {
-        name: name,
+        name: username, // исправлено с name на username
         age: age
     };
 }
 
-for (let i = 1; i <= users; i++) {
-    console.log(`Пользователь - ${i}`);
-    console.log(`Имя - ${usersamount[i].name}`);
-    console.log(`Возраст - ${usersamount[i].age}`);
+for (let key in usersamount) {
+    console.log(`Пользователь - ${key}`);
+    console.log(`Имя - ${usersamount[key].name}`);
+    console.log(`Возраст - ${usersamount[key].age}`);
 }
 
 console.log(`Все пользователи: `, usersamount);
-
 // users end
+
 
 // menu start
 
