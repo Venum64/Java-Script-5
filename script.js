@@ -6,7 +6,7 @@ for (let i = 1; i <= users; i++) {
     let username = prompt(`Введите имя пользователя ${i}:`);
     let age = +prompt(`Введите возраст пользователя ${i}:`);
     usersamount[i] = {
-        name: username, // исправлено с name на username
+        name: username, 
         age: age
     };
 }
